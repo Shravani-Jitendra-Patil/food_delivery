@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    
+}
+#navbar::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background-color: black;
+    opacity:0.4;
+    z-index:-1;
+}
+
+#logo{
+    margin: -13px -19px;
+
+}
+#logo img{
+    height: 50px;
+    margin: 59px 28px;
+    border-radius: 90%;
+}
+
+#navbar ul{
+    display:flex;
+    font-family: Georgia;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem ;
+}
+#navbar ul li a{
+    display:block;
+    text-decoration: none;
+    padding: 4px 36px;
+    border-radius: 20px;
+    color:white;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:444px;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    height: 62%;
+    width: 101%;
+    background-image: url(isha.jpg);
+    opacity: 0.89;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: sans-serif;
+
+
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+   font-family:cursive;
+
+
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
+.services{
+    margin:34px;
+    display:flex;
+    flex-direction: column;
+}
+.services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:3px 6px;
+    border-radius:28px;
+    background-color: rgb(250, 236, 236);
+}
+.services .box img{
+   height:160px;
+   margin: auto;
+   display:block;
+   border-radius: 50%;
+}
+.services .box p{
+    font-family:cursive;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding:12px ;
+}
+#clients{
+    display:flex;
+}
+
